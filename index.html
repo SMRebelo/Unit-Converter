@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -20,38 +20,77 @@
         </div>
         <section class="unitSelection">
           <div class="columnLeft">
-            <button id="logoOneLeft"><img src="/public/imgPX.svg" alt="logo px-em"></button>
-            <p id="descOneLeft">Pixels</p>
-            <button id="logoTwoLeft"><img src="/public/imgRGB.svg" alt="logo hexadecimal-rgb"></button>
-            <p id="descTwoLeft">Hexadecimal</p>
+            <button id="logoOneLeft">
+              <img src="/public/imgPX.svg" alt="logo px-em" />
+            </button>
+            <label id="descOneLeft">Pixels</label>
+            <button id="logoTwoLeft">
+              <img src="/public/imgRGB.svg" alt="logo hexadecimal-rgb" />
+            </button>
+            <label id="descTwoLeft">Hexadecimal</label>
           </div>
           <div class="columnRight">
-            <button id="logoOneRight"><img src="/public/temperature.svg" alt="logo temperature"></button>
-            <p id="descOneRight">Temperature</p>
-            <button id="logoTwoRight"><img src="/public/currency.svg" alt="logo currency"></button>
-            <p id="descTwoRight">Currency</p>
+            <button id="logoOneRight">
+              <img src="/public/temperature.svg" alt="logo temperature" />
+            </button>
+            <label id="descOneRight">Temperature</label>
+            <button id="logoTwoRight">
+              <img src="/public/currency.svg" alt="logo currency" />
+            </button>
+            <label id="descTwoRight">Currency</label>
           </div>
-          
-        </section>  
+        </section>
       </section>
       <section class="center">
         <div class="columnCenter">
-          <img src="/public/mainLogo.svg" alt="main logo">
+          <img src="/public/mainLogo.svg" alt="main logo" />
           <p id="titleCenter">FLUX</p>
           <p id="descCenter">Unit Converter</p>
-
         </div>
       </section>
+      <section class="right">
         <div class="titleRight">
-
+          <label id="titleRight">Type of Converter</label>
         </div>
-        <div class="converter">
-
-        </div>
+        <section class="displaySelection">
+          <div class="converter">
+            <form>
+              <div class="input">
+                <input
+                  type="text"
+                  id="inputSelection"
+                  placeholder="type the number..."
+                />
+                <select>
+                  <option value="Pixels">Pixels</option>
+                  <option value="Em">Em</option>
+                </select>
+              </div>
+              <div class="output">
+                <input
+                  type="text"
+                  id="outputSelection"
+                  placeholder="type the number..."
+                />
+                <select>
+                  <option value="Pixels">Pixels</option>
+                  <option value="Em">Em</option>
+                </select>
+              </div>
+              <div class="buttonSubmit">
+                <input type="submit" value="Convert" />
+              </div>
+            </form>
+          </div>
+        </section>
         <div class="math">
+          <p>Result</p>
+          <div id="result"></div>
 
+          <p>Mathematical Calculation</p>
+          <div id="calculationWindow"></div>
         </div>
-      <section class="right"></section>
+      </section>
     </div>
     <script type="module" src="/main.js"></script>
   </body>

@@ -45,7 +45,7 @@
   align-items: center;
   justify-content: center;
 }
-.columnLeft > p {
+.columnLeft > label {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -64,7 +64,7 @@
   align-items: center;
   justify-content: center;
 }
-.columnRight > p {
+.columnRight > label {
   display: flex;
   flex-direction: column;
   align-items: center;
