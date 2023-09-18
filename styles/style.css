@@ -1,4 +1,4 @@
-*{
+*{ 
   margin: 0 ;
   padding: 0;
   font-family: "Inter", sans-serif;
@@ -23,6 +23,7 @@ body {
   flex-direction: column;
   background-color: #343d4b;
   overflow-x: hidden;
+  background-color: #E2F6FF;
 }
 .app {
   display: flex;
