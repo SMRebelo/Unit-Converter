@@ -10,7 +10,7 @@
 .titleLeft {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center;  
   justify-content: center;
   width: 100%;
   min-height: 100%;
@@ -25,25 +25,25 @@
   height: 22.5em;
   gap: 2em;
 }
-.colummLeft {
+.columnLeft {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.colummRight {
+.columnRight {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.colummLeft > button {
+.columnLeft > button {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.colummLeft > p {
+.columnLeft > p {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -56,13 +56,13 @@
   font-weight: 400;
   line-height: normal;
 }
-.colummRight > button {
+.columnRight > button {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.colummRight > p {
+.columnRight > p {
   display: flex;
   flex-direction: column;
   align-items: center;

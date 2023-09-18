@@ -1,4 +1,5 @@
 import './styles/style.css'
-import './styles/collumLeft.css'
-import './styles/collumRight.css'
+import './styles/columnLeft.css'
+import './styles/columnRight.css'
+import './styles/columnCenter.css'
 
