@@ -21,21 +21,21 @@
         <section class="unitSelection">
           <div class="columnLeft">
             <button id="logoOneLeft">
-              <img src="/public/imgPX.svg" alt="logo px-em" />
+              <img src="/public/imgPX.svg" alt="logo px-em" id="logoOne"/>
             </button>
             <label id="descOneLeft">Pixels</label>
             <button id="logoTwoLeft">
-              <img src="/public/imgRGB.svg" alt="logo hexadecimal-rgb" />
+              <img src="/public/imgRGB.svg" alt="logo hexadecimal-rgb" id="logoTwo"/>
             </button>
             <label id="descTwoLeft">Hexadecimal</label>
           </div>
           <div class="columnRight">
             <button id="logoOneRight">
-              <img src="/public/temperature.svg" alt="logo temperature" />
+              <img src="/public/temperature.svg" alt="logo temperature" id="logoThree"/>
             </button>
             <label id="descOneRight">Temperature</label>
             <button id="logoTwoRight">
-              <img src="/public/currency.svg" alt="logo currency" />
+              <img src="/public/currency.svg" alt="logo currency" id="logoFour"/>
             </button>
             <label id="descTwoRight">Currency</label>
           </div>
@@ -61,26 +61,22 @@
                   id="inputSelection"
                   placeholder="Type the number..."
                 />
-                <select class="inputSelect">
-                  <option value="pixels">Pixels</option>
-                  <option value="em">Em</option>
-                  <option value="rm">Rm</option>
-                </select>
               </div>
-              <div class="output">
-                <input
-                  type="text"
-                  id="outputSelection"
-                  placeholder="Type the number..."
-                />
-                <select class="outputSelect">
-                  <option value="pixels">Pixels</option>
-                  <option value="em">Em</option>
-                  <option value="rm">Rm</option>
+              <div class="types">
+                <select class="select1st" name="select1st">
+                  <option value="pixels" id="opcionInputOne">Pixels</option>
+                  <option value="em" id="opcionInputTwo">Em</option>
+                  <option value="rm" id="opcionInputThree">Rm</option>
+                </select>
+                <p class="to">Converts To</p>
+                <select class="select2nd" name="select2nd">
+                  <option value="pixels" id="opcionOutputOne">Pixels</option>
+                  <option value="em" id="opcionOutputTwo">Em</option>
+                  <option value="rm" id="opcionOutputThree">Rm</option>
                 </select>
               </div>
               <div class="buttonSubmit">
-                <input type="submit" value="Convert" />
+                <input type="submit" value="Convert" id="buttonSubmit"/>
               </div>
             </form>
           </div>
@@ -88,7 +84,6 @@
         <div class="math">
           <p>Result</p>
           <div id="result"></div>
-
           <p>Mathematical Calculation</p>
           <div id="calculationWindow"></div>
         </div>

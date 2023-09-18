@@ -42,13 +42,22 @@
   align-items: center;
   gap: 1em;
 }
-.input > .inputSelect {
+.types > .select1st {
   font-size: 14px;
   color: #f4feff;
   background-color: #667391;
   border-radius: 0.25em;
   height: 2em;
+  width: 4.5em;
 }
+.types > .select2nd {
+    font-size: 14px;
+    color: #f4feff;
+    background-color: #667391;
+    border-radius: 0.25em;
+    height: 2em;
+    width: 4.5em;
+  }
 .input > input {
   display: flex;
   align-items: center;
@@ -69,38 +78,11 @@
 .input > input:hover {
   text-decoration: none;
 }
-.output {
+.types {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 1em;
-}
-.output > .outputSelect {
-  font-size: 14px;
-  color: #f4feff;
-  background-color: #667391;
-  border-radius: 0.25em;
-  height: 2em;
-}
-.output > input {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #667391;
-  border: none;
-  border-radius: 0.25em;
-  height: 2em;
-  color: #f4feff;
-}
-.output > input::placeholder {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #f4feff;
-  padding-left: 0.5em;
-}
-.output > input:hover {
-  text-decoration: none;
 }
 .buttonSubmit {
   display: flex;
@@ -131,10 +113,10 @@
   gap: 0.5em;
 }
 .math > #result {
-  background-color: #667391;
-  width: 25%;
-  height: 2em;
-}
+    background-color: #667391;
+    width: 25%;
+    height: 2em;
+  }
 .math > #calculationWindow {
   background-color: #667391; 
   width: 75%;
@@ -144,6 +126,14 @@
     color: #d5fafd;
     font-family: Inter;
     font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.types > .to{
+    color: #d5fafd;
+    font-family: Inter;
+    font-size: 15px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
