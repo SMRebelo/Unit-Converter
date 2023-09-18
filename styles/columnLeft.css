@@ -1,5 +1,5 @@
 .left {
-  width: 23.4375em;
+  width: 100%;
   min-height: 100%;
   display: flex;
   flex-direction: column;
@@ -15,6 +15,8 @@
   width: 100%;
   min-height: 100%;
   margin-top: 3em;
+  margin-right: 1.5em;
+  margin-left: 1.5em;
 }
 .unitSelection {
   display: flex;

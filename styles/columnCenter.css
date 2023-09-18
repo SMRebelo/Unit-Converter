@@ -1,0 +1,46 @@
+.center {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #e2f6ff;
+}
+.columnCenter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5em;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+}
+.columnCenter > img {
+  width: 12.5em;
+  height: 12.5em;
+}
+.columnCenter > #titleCenter {
+  color: #404b65;
+  font-family: Inter;
+  font-size: 4em;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.columnCenter > #descCenter {
+  color: #404b65;
+  font-family: Inter;
+  font-size: 2em;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
