@@ -26,3 +26,89 @@
   height: 22.5em;
   gap: 2em;
 }
+.converterBox > form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100%;
+  gap: 1em;
+}
+.input {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1em;
+}
+.input > .inputSelect {
+  font-size: 14px;
+  color: #f4feff;
+  background-color: #667391;
+  border-radius: 0.25em;
+  height: 2em;
+}
+.input > input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #667391;
+  border: none;
+  border-radius: 0.25em;
+  height: 2em;
+  color: #f4feff;
+}
+.input > input::placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f4feff;
+  padding-left: 0.5em;
+}
+.input > input:hover {
+  text-decoration: none;
+}
+.output {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1em;
+}
+.output > .outputSelect {
+  font-size: 14px;
+  color: #f4feff;
+  background-color: #667391;
+  border-radius: 0.25em;
+  height: 2em;
+}
+.output > input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #667391;
+  border: none;
+  border-radius: 0.25em;
+  height: 2em;
+  color: #f4feff;
+}
+.output > input::placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f4feff;
+  padding-left: 0.5em;
+}
+.output > input:hover {
+  text-decoration: none;
+}
+.buttonSubmit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #667391;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 0.25em;
+  width: 5em;
+  height: 2em;
+  color: #f4feff;
+}
