@@ -1,4 +1,5 @@
 const button = document.getElementById("logoOne");
+const buttonSubmit = document.getElementeById("submit");
 
 button.addEventListener("click", (event) => {
   document.getElementById("titleRight").innerHTML = `Pixel Converter`;
@@ -9,6 +10,22 @@ button.addEventListener("click", (event) => {
   document.getElementById("opcionOutputTwo").innerHTML = `Em`;
   document.getElementById("opcionOutputThree").innerHTML = `Rm`;
 
-    let valueOne = +(document.getElementById("inputSelection").value);
+buttonSubmit.addEventListener("click"), () => {
+  pixels();
+})
+function pixels()
+    var valueOne = +(document.getElementById("inputSelection").value);
+var inputSelectOne = document.getElementById("");
+  var inputSelectTwo = document.getElementById("");
 
+if(inputSelectOne == "Px"){
+  let res = 0;
+  switch(inputSelectTwo)
+    case: "Em"; 
+        res = valueOne/16;
+  break;
+}
+
+  
+  
 });
