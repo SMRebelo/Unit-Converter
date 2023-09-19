@@ -1,4 +1,5 @@
 const button = document.getElementById("logoOne");
+const buttonSubmit = document.getElementById("buttonSubmit");
 
 button.addEventListener("click", (event) => {
   document.getElementById("titleRight").innerHTML = `Pixel Converter`;
@@ -9,6 +10,6 @@ button.addEventListener("click", (event) => {
   document.getElementById("opcionOutputTwo").innerHTML = `Em`;
   document.getElementById("opcionOutputThree").innerHTML = `Rm`;
 
-    let valueOne = +(document.getElementById("inputSelection").value);
-
+  
 });
+
