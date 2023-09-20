@@ -1,5 +1,6 @@
 const button = document.getElementById("logoOne");
 const buttonSubmit = document.getElementById("buttonSubmit");
+const resFinal = 0;
 
 button.addEventListener("click", (event) => {
   document.getElementById("titleRight").innerHTML = `Pixel Converter`;
@@ -10,76 +11,75 @@ button.addEventListener("click", (event) => {
   document.getElementById("opcionOutputTwo").innerHTML = `Em`;
   document.getElementById("opcionOutputThree").innerHTML = `Rem`;
   console.log("inicio");
-  alert("anicio");
-  function pixels() {
-    let valueOne = +(document.getElementById("inputSelection")).value;
-    let inputOne = document.getElementById("inputOne");
-    let inputTwo = document.getElementById("inputTwo");
-    let res=0;
 
-    if(inputOne == "Px"){
-      
-      switch (inputTwo) {
+
+  function pixels() {
+    const valueOne = +document.getElementById("inputSelection").value;
+    const inputOneRes = document.getElementById("inputOne");
+    const inputTwoRes = document.getElementById("inputTwo");
+    var res = 0;
+
+    if (inputOneRes === "Px") {
+      switch (inputTwoRes) {
+        case "Em":{
+          res = valueOne / 16;
+          break;
+          }
+        case "Rem":{
+          res = valueOne / 16;
+          break;
+          }
+        case "Px":{
+          alert("Error chose another type.");
+          document.getElementById("inputTwo").focus();
+          break;
+          }
+        default:{
+          alert("default case one");}
+      }
+      res = resFinal;
+
+    } else if (inputOneRes === "Em") {
+      switch (inputTwoRes) {
+        case "Px":
+          res = valueOne * 16;
+          break;
         case "Em":
-          res=valueOne/16;
-          document.getElementById("result").innerHTML = res;
-          alert("em")
+          alert("Error chose another type.");
+          document.getElementById("inputTwo").focus();
           break;
         case "Rem":
-          res = valueOne/16;
-          document.getElementById("result").innerHTML = res;
-          alert("rem")
+          res = valueOne * 16;
           break;
-          case "Px":
-          alert("Error chose another type.")
+        default:
+          alert("default case two");
+      }
+      res = resFinal;
+    } 
+    else if (inputOneRes === "Rem") {
+      switch (inputTwoRes) {
+        case "Px":
+          res = valueOne * 16;
+          break;
+        case "Em":
+          res = valueOne * 16;
+          break;
+        case "Rem":
+          alert("Error chose another type.");
           document.getElementById("inputTwo").focus();
-          alert("null")
           break;
-        default:
-          alert("default")
-      }
-    }else if(inputOne == "Em"){
 
-      switch (inputTwo) {
-        case "Px":
-            res = valueOne*16;
-            document.getElementById("result").innerHTML = res;
-          break;
-          case "Em":
-            alert("Error chose another type.")
-            document.getElementById("inputTwo").focus();
-          break;
-          case "Rem":
-            res = valueOne*16;
-            document.getElementById("result").innerHTML = res;
-          break;
-      
         default:
-          break;
-          alert("default")
+          alert("default case three");
       }
-    }else if(inputOne == "Rem"){
-
-      switch (inputTwo) {
-        case "Px":
-            res = valueOne*16;
-            document.getElementById("result").innerHTML = res;
-          break;            
-          case "Rem":
-            res = valueOne*16;
-            document.getElementById("result").innerHTML = res;
-          break;
-          case "Em":
-            alert("Error chose another type.")
-            document.getElementById("inputTwo").focus();
-          break;
-      
-        default:
-          break;
-          alert("default")
-      }
-  }
+      res = resFinal;
+    }
+  } // fim da função pixels
+  document.getElementById("result").innerHTML = resFinal;
   buttonSubmit.addEventListener("click", () => {
     pixels();
-  })
-}});
+    document.getElementById("result").innerHTML = resFinal;
+  });
+  document.getElementById("result").innerHTML = resFinal;
+});
+document.getElementById("result").innerHTML = resFinal;
