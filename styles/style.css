@@ -32,3 +32,10 @@ body {
   justify-content: center;
   width: 65%;
 }
+.visible{
+  display: block;
+
+}
+.invisible{
+  display: none;
+}
