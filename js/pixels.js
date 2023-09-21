@@ -1,8 +1,10 @@
-import { hexadecimal, pixels } from "./conversions";
+import { binary, hexadecimal, pixels } from "./conversions";
 
-const buttonOne = document.getElementById("logoOne");
+const buttonOne = document.getElementById("logoOne"); 
 const buttonTwo = document.getElementById("logoTwo");
 const buttonThree = document.getElementById("logoThree");
+const buttonFour = document.getElementById("logoFour");
+
 
 const buttonSubmit = document.getElementById("buttonSubmit");
 const title = document.getElementById("titleRight");
@@ -71,16 +73,27 @@ buttonThree.addEventListener("click", (event) =>{
     document.getElementById("opcionInputThree").classList.remove("visible");
     document.getElementById("opcionInputThree").classList.add("invisible");
   } // Uses a class ->"visible/invisivle" to hide and show the option
-  document.getElementById("opcionOutputOne").innerHTML = `Dec`;
-  document.getElementById("opcionOutputOne").value = `Dec`;
-  document.getElementById("opcionOutputTwo").innerHTML = `Bit`;
-  document.getElementById("opcionOutputTwo").value = `Bit`;
+  document.getElementById("opcionOutputOne").innerHTML = `Bit`;
+  document.getElementById("opcionOutputOne").value = `Bit`;
+  document.getElementById("opcionOutputTwo").innerHTML = `Dec`;
+  document.getElementById("opcionOutputTwo").value = `Dec`;
   if (
     document.getElementById("opcionOutputThree").classList.contains("visible")
   ) {
     document.getElementById("opcionOutputThree").classList.remove("visible");
     document.getElementById("opcionOutputThree").classList.add("invisible");
   } // Uses a class ->"visible/invisivle" to hide and show the option
+})
+
+buttonFour.addEventListener("click", (event) =>{
+
+
+
+
+
+
+
+  
 })
 
 buttonSubmit.addEventListener("click", (event) => {

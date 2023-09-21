@@ -17,7 +17,7 @@ export function pixels() {
         break;
       default:
         alert("Error chose another type.");
-        document.getElementById("inputTwo").focus();
+        document.getElementById("inputTwo").focus(); 
     }
   }
   if (inputOneRes === "Em") {
@@ -49,12 +49,13 @@ export function pixels() {
   document.getElementById("calculationWindow").innerHTML = formula;
   //? ONE OF THE BIG PROBLEMS WAS THAT I WASN´T CALLING THE FUNCTION IN THE END OF THE CLICK BUT OUTSIDE THE FUNCTION!!!
 }
-
 //! IMPORT LIBRARY FOR HEXADECIMAL TO RGB!!!
+
+//? Here starts the function for the hexadecimal convertion 
 
 export function hexadecimal() {
   let valueOne = document.getElementById("inputSelection").value;
-  let inputOneRes = document.getElementById("inputOne").value; //! tens que mudar o value para alem do html em todos no js pixels.js
+  let inputOneRes = document.getElementById("inputOne").value; 
   let inputTwoRes = document.getElementById("inputTwo").value;
   let res = 0;
 
@@ -85,7 +86,7 @@ export function hexadecimal() {
 }
 
 //? Here starts the function for the birary convertion
-
+//! FORMULA NOT WPRKING YET!!!!!
 export function binary() {
   let valueOne = document.getElementById("inputSelection").value;
   let inputOneRes = document.getElementById("inputOne").value;
@@ -119,8 +120,9 @@ export function binary() {
     switch (inputTwoRes) {
       case "Bit":
         if (!Number.isSafeInteger(valueOne) || valueOne < 0) {
-          //? "!Number.isSafeInteger" -> if the number its NOT a integer, because of the
-          alert("the value cant be a negative integer"); //?    sign "!". and if its negative, then throws an error!!
+        
+          //? "!Number.isSafeInteger" -> if the number its NOT a integer, because of the sign "!". and if its negative, then throws an error!!
+          alert("the value cant be a negative integer"); 
         }
         if (valueOne === 1) {
           return "1";
@@ -133,8 +135,8 @@ export function binary() {
 
       default:
         alert("Cant compare same types");
-    }
+
+    }  document.getElementById("result").innerHTML = res;
   }
-  document.getElementById("result").innerHTML = res;
 }
 
