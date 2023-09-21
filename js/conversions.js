@@ -53,11 +53,11 @@ export function pixels() {
 //! IMPORT LIBRARY FOR HEXADECIMAL TO RGB!!!
 
 export function hexadecimal() {
-  let valueOne = +document.getElementById("inputSelection").value;
+  let valueOne = document.getElementById("inputSelection").value;
   let inputOneRes = document.getElementById("inputOne").value; //! tens que mudar o value para alem do html em todos no js pixels.js
   let inputTwoRes = document.getElementById("inputTwo").value;
   let res = 0;
-  console.log(inputOneRes);
+
   if (inputOneRes === "Hex") {
     switch (inputTwoRes) {
       case "Rgb":
@@ -66,7 +66,16 @@ export function hexadecimal() {
 
       default:
         alert("Cant compare same values");
-    }
+    }document.getElementById("result").innerHTML = `rgb(${res.red}, ${res.green}, ${res.blue})`;
   }
-  document.getElementById("result").innerHTML = res;
+  if(inputOneRes === "Rgb"){
+    switch (inputTwoRes) {
+      case "Hex":
+        res = rgbHex(valueOne);
+        break;
+    
+      default:
+        alert("Cant compare same values");
+    }document.getElementById("result").innerHTML = `#${res}`;
+  }
 }
