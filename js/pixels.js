@@ -2,6 +2,7 @@ import { hexadecimal, pixels } from "./conversions";
 
 const buttonOne = document.getElementById("logoOne");
 const buttonTwo = document.getElementById("logoTwo");
+const buttonThree = document.getElementById("logoThree");
 
 const buttonSubmit = document.getElementById("buttonSubmit");
 const title = document.getElementById("titleRight");
@@ -58,6 +59,30 @@ buttonTwo.addEventListener("click", (event) => {
   } // Uses a class ->"visible/invisivle" to hide and show the option
 });
 
+buttonThree.addEventListener("click", (event) =>{
+  document.getElementById("titleRight").innerHTML = `Binary Converter`;
+  document.getElementById("opcionInputOne").innerHTML = `Bit`;
+  document.getElementById("opcionInputOne").value = `Bit`;
+  document.getElementById("opcionInputTwo").innerHTML = `Dec`;
+  document.getElementById("opcionInputTwo").value = `Dec`;
+  if (
+    document.getElementById("opcionInputThree").classList.contains("visible")
+  ) {
+    document.getElementById("opcionInputThree").classList.remove("visible");
+    document.getElementById("opcionInputThree").classList.add("invisible");
+  } // Uses a class ->"visible/invisivle" to hide and show the option
+  document.getElementById("opcionOutputOne").innerHTML = `Dec`;
+  document.getElementById("opcionOutputOne").value = `Dec`;
+  document.getElementById("opcionOutputTwo").innerHTML = `Bit`;
+  document.getElementById("opcionOutputTwo").value = `Bit`;
+  if (
+    document.getElementById("opcionOutputThree").classList.contains("visible")
+  ) {
+    document.getElementById("opcionOutputThree").classList.remove("visible");
+    document.getElementById("opcionOutputThree").classList.add("invisible");
+  } // Uses a class ->"visible/invisivle" to hide and show the option
+})
+
 buttonSubmit.addEventListener("click", (event) => {
   event.preventDefault(); //? The big mistake was that i was making a "form", and in a form we send the information to a API. of course it does stick on the screen!!! to prevent that we call the method "EVENT.PREVENTDEFAULT();" this makes the information displayed stick on the screen
   switch (
@@ -69,6 +94,8 @@ buttonSubmit.addEventListener("click", (event) => {
     case "Hexadecimal Converter":
       hexadecimal();
       break;
+      case "Binary Converter":
+        binary();
     default:
       break;
   }

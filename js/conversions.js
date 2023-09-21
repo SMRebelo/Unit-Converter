@@ -66,16 +66,75 @@ export function hexadecimal() {
 
       default:
         alert("Cant compare same values");
-    }document.getElementById("result").innerHTML = `rgb(${res.red}, ${res.green}, ${res.blue})`;
+    }
+    document.getElementById(
+      "result"
+    ).innerHTML = `rgb(${res.red}, ${res.green}, ${res.blue})`;
   }
-  if(inputOneRes === "Rgb"){
+  if (inputOneRes === "Rgb") {
     switch (inputTwoRes) {
       case "Hex":
         res = rgbHex(valueOne);
         break;
-    
+
       default:
         alert("Cant compare same values");
-    }document.getElementById("result").innerHTML = `#${res}`;
+    }
+    document.getElementById("result").innerHTML = `#${res}`;
   }
 }
+
+//? Here starts the function for the birary convertion
+
+export function binary() {
+  let valueOne = document.getElementById("inputSelection").value;
+  let inputOneRes = document.getElementById("inputOne").value;
+  let inputTwoRes = document.getElementById("inputTwo").value;
+
+  let binary = "";
+  let decimal = 0;
+  let i;
+  let res;
+
+  if (inputOneRes === "Bit") {
+    switch (inputTwoRes) {
+      case "Dec":
+        if (typeof valueOne == "string") {
+          // typeof operator checks the value of the argument
+          binary = valueOne.split(); // if it is of the value string, splits it .
+        } else {
+          binary = valueOne.toString().split(); // If its not a string, the operator "toString" transforms it into a string
+        }
+        for (i = 0; i < binary.length; i++) {
+          decimal = decimal * 2 + binary[i];
+        }
+        break;
+      default:
+        alert("Cant compare same types");
+    }
+  }
+  document.getElementById("result").innerHTML = decimal;
+
+  if (inputOneRes === "Dec") {
+    switch (inputTwoRes) {
+      case "Bit":
+        if (!Number.isSafeInteger(valueOne) || valueOne < 0) {
+          //? "!Number.isSafeInteger" -> if the number its NOT a integer, because of the
+          alert("the value cant be a negative integer"); //?    sign "!". and if its negative, then throws an error!!
+        }
+        if (valueOne === 1) {
+          return "1";
+        }
+        if (valueOne === 0) {
+          return "0";
+        }
+        res = Math.floor(valueOne / 2) + (valueOne % 2);
+        break;
+
+      default:
+        alert("Cant compare same types");
+    }
+  }
+  document.getElementById("result").innerHTML = res;
+}
+
