@@ -17,7 +17,7 @@ export function pixels() {
         break;
       default:
         alert("Error chose another type.");
-        document.getElementById("inputTwo").focus(); 
+        document.getElementById("inputTwo").focus();
     }
   }
   if (inputOneRes === "Em") {
@@ -51,11 +51,11 @@ export function pixels() {
 }
 //! IMPORT LIBRARY FOR HEXADECIMAL TO RGB!!!
 
-//? Here starts the function for the hexadecimal convertion 
+//? Here starts the function for the hexadecimal convertion
 
 export function hexadecimal() {
   let valueOne = document.getElementById("inputSelection").value;
-  let inputOneRes = document.getElementById("inputOne").value; 
+  let inputOneRes = document.getElementById("inputOne").value;
   let inputTwoRes = document.getElementById("inputTwo").value;
   let res = 0;
 
@@ -86,7 +86,7 @@ export function hexadecimal() {
 }
 
 //? Here starts the function for the birary convertion
-//! FORMULA NOT WPRKING YET!!!!!
+//! FORMULA NOT WORKING YET!!!!!
 export function binary() {
   let valueOne = document.getElementById("inputSelection").value;
   let inputOneRes = document.getElementById("inputOne").value;
@@ -120,9 +120,8 @@ export function binary() {
     switch (inputTwoRes) {
       case "Bit":
         if (!Number.isSafeInteger(valueOne) || valueOne < 0) {
-        
           //? "!Number.isSafeInteger" -> if the number its NOT a integer, because of the sign "!". and if its negative, then throws an error!!
-          alert("the value cant be a negative integer"); 
+          alert("the value cant be a negative integer");
         }
         if (valueOne === 1) {
           return "1";
@@ -135,8 +134,54 @@ export function binary() {
 
       default:
         alert("Cant compare same types");
-
-    }  document.getElementById("result").innerHTML = res;
+    }
+    document.getElementById("result").innerHTML = res;
   }
+}
+//? HERE STARTS THE FUNCTION FOR THE BYTES CONVERTER
+
+export function bytes() {
+  let valueOne = document.getElementById("inputSelection").value;
+  let inputOneRes = document.getElementById("inputOne").value;
+  let inputTwoRes = document.getElementById("inputTwo").value;
+  let res;
+
+  if (inputOneRes === "bytes") {
+    switch (inputTwoRes) {
+      case "piB":
+        res = (valueOne / 1125899906842624).toFixed(2) + " " + "PiB";
+        break;
+      case "tiB":
+        res = (valueOne / 1099511627776).toFixed(2) + " " + "TiB";
+        break;
+      case "giB":
+        res = (valueOne / 1073741824).toFixed(2) + " " + "GiB";
+        break;
+      case "miB":
+        res = (valueOne / 1048576).toFixed(2) + " " + "MiB";
+        break;
+      case "kiB":
+        res = (valueOne / 1024).toFixed(2) + " " + "KiB";
+        break;
+      default:
+        alert("cant compare same values");
+    }
+  }document.getElementById("result").innerHTML = res;
+
+  if(inputOneRes === "kiB"){
+    switch (key) {
+      case value:
+        
+        break;
+    
+      default:
+        break;
+    }
+  }
+
+
+
+
+
 }
 
