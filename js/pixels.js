@@ -169,7 +169,7 @@ buttonThree.addEventListener("click", (event) =>{
     document.getElementById("opcionInputSix").classList.add("invisible");
   }
 
-  //? HERE STARTS THE BUTTON FOR THREE FOR OPCION TWO.
+  //? HERE STARTS THE BUTTON THREE FOR OPCION TWO.
   document.getElementById("opcionOutputOne").innerHTML = `Bit`;
   document.getElementById("opcionOutputOne").value = `Bit`;
   document.getElementById("opcionOutputTwo").innerHTML = `Dec`;
@@ -199,16 +199,84 @@ buttonThree.addEventListener("click", (event) =>{
     document.getElementById("opcionOutputSix").classList.add("invisible");
   }
 })
-
+// ? HERE STARTS THE BUTTON FOR LOGO FOUR.
 buttonFour.addEventListener("click", (event) =>{
+  document.getElementById("titleRight").innerHTML = "Bytes Converter";
 
+  document.getElementById("opcionInputOne").innerHTML = `bytes`;
+  document.getElementById("opcionInputOne").value = `bytes`;
+  document.getElementById("opcionInputTwo").innerHTML = `kiB`;
+  document.getElementById("opcionInputTwo").value = `kiB`;
+if (
+    document.getElementById("opcionInputThree").classList.contains("invisible") 
+  ) {
+    document.getElementById("opcionInputThree").classList.remove("invisible");
+    document.getElementById("opcionInputThree").classList.add("visible"); 
+  }
+  document.getElementById("opcionInputThree").innerHTML = `miB`;
+  document.getElementById("opcionInputThree").value = `miB`;
+  if (
+    document.getElementById("opcionInputFour").classList.contains("invisible") 
+  ) {
+    document.getElementById("opcionInputFour").classList.remove("invisible");
+    document.getElementById("opcionInputFour").classList.add("visible"); 
+  }
+  document.getElementById("opcionInputFour").innerHTML = `giB`;
+  document.getElementById("opcionInputFour").value = `giB`;
+  if (
+    document.getElementById("opcionInputFive").classList.contains("invisible") 
+  ) {
+    document.getElementById("opcionInputFive").classList.remove("invisible");
+    document.getElementById("opcionInputFive").classList.add("visible"); 
+  }
+  document.getElementById("opcionInputFive").innerHTML = `tiB`;
+  document.getElementById("opcionInputFive").value = `tiB`;
+  if (
+    document.getElementById("opcionInputSix").classList.contains("invisible") 
+  ) {
+    document.getElementById("opcionInputSix").classList.remove("invisible");
+    document.getElementById("opcionInputSix").classList.add("visible"); 
+  }
+  document.getElementById("opcionInputSix").innerHTML = `piB`;
+  document.getElementById("opcionInputSix").value = `piB`;
 
-
-
-
-
-
-
+  //? HERE STARTS THE BUTTON FOUR FOR OPCION TWO.
+  document.getElementById("opcionOutputOne").innerHTML = `bytes`;
+  document.getElementById("opcionOutputOne").value = `bytes`;
+  document.getElementById("opcionOutputTwo").innerHTML = `kiB`;
+  document.getElementById("opcionOutputTwo").value = `kiB`;
+  if (
+    document.getElementById("opcionOutputThree").classList.contains("invisible")
+  ) {
+    document.getElementById("opcionOutputThree").classList.remove("invisible");
+    document.getElementById("opcionOutputThree").classList.add("visible"); 
+  }
+  document.getElementById("opcionOutputThree").innerHTML = `miB`; 
+  document.getElementById("opcionOutputThree").value = `miB`;
+  if (
+    document.getElementById("opcionOutputFour").classList.contains("invisible")
+  ) {
+    document.getElementById("opcionOutputFour").classList.remove("invisible");
+    document.getElementById("opcionOutputFour").classList.add("visible"); 
+  }
+  document.getElementById("opcionOutputFour").innerHTML = `giB`; 
+  document.getElementById("opcionOutputFour").value = `giB`;
+  if (
+    document.getElementById("opcionOutputFive").classList.contains("invisible")
+  ) {
+    document.getElementById("opcionOutputFive").classList.remove("invisible");
+    document.getElementById("opcionOutputFive").classList.add("visible"); 
+  }
+  document.getElementById("opcionOutputFive").innerHTML = `tib`; 
+  document.getElementById("opcionOutputFive").value = `tib`;
+  if (
+    document.getElementById("opcionOutputSix").classList.contains("invisible")
+  ) {
+    document.getElementById("opcionOutputSix").classList.remove("invisible");
+    document.getElementById("opcionOutputSix").classList.add("visible"); 
+  }
+  document.getElementById("opcionOutputSix").innerHTML = `piB`; 
+  document.getElementById("opcionOutputSix").value = `piB`;
 })
 
 buttonSubmit.addEventListener("click", (event) => {
