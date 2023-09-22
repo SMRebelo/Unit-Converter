@@ -151,19 +151,23 @@ export function bytes() {
     switch (inputTwoRes) {
       case "piB":
         res = (valueOne / 1125899906842624).toFixed(3) + " " + "PiB";
-        display = ` 1 PiB =  ${valueOne} bytes / 1 PiB `
+        display = ` 1 PiB =  ${valueOne} bytes / 1 PiB `;
         break;
       case "tiB":
         res = (valueOne / 1099511627776).toFixed(3) + " " + "TiB";
+        display = ` 1 TiB = ${valueOne} bytes / 1 TiB`;
         break;
       case "giB":
         res = (valueOne / 1073741824).toFixed(3) + " " + "GiB";
+        display = `1 GiB = ${valueOne} bytes / 1 Gib`;
         break;
       case "miB":
         res = (valueOne / 1048576).toFixed(3) + " " + "MiB";
+        display = `1 MiB= ${valueOne} bytes /  1 MiB`;
         break;
       case "kiB":
         res = (valueOne / 1024).toFixed(3) + " " + "KiB";
+        display = `1 KiB=${valueOne} bytes / 1 kiB `;
         break;
       default:
         alert("cant compare same values");
@@ -172,54 +176,74 @@ export function bytes() {
   document.getElementById("result").innerHTML = res;
   document.getElementById("calculationWindow").innerHTML = display;
 
-
   if (inputOneRes === "kiB") {
     switch (inputTwoRes) {
       case "bytes":
-        res = (valueOne * 1024).toFixed(3) + " " + "bytes";        
+        res = (valueOne * 1024).toFixed(3) + " " + "bytes";
+        display = `1 byte = ${valueOne} X 1 Kib`;
         break;
       case "miB":
         res = (valueOne / 1024).toFixed(3) + " " + "MiB";
+        display = `1 MiB = ${valueOne} / 1 MiB `;
         break;
-        case "giB":
-          res = (valueOne / 1048576).toFixed(3) + " " + "GiB";
-          break;
-          case "tiB":
-            res = (valueOne / 1073741824).toFixed(3) + " " + "TiB";
-            break;
-            case "piB":
-              res = (valueOne / 1099511627776).toFixed(3) + " " + "PiB";
-              break;
+      case "giB":
+        res = (valueOne / 1048576).toFixed(3) + " " + "GiB";
+        display = `1 GiB = ${valueOne} / 1 GiB`;
+        break;
+      case "tiB":
+        res = (valueOne / 1073741824).toFixed(3) + " " + "TiB";
+        display = `1 TiB = ${valueOne} / 1 TiB`;
+        break;
+      case "piB":
+        res = (valueOne / 1099511627776).toFixed(3) + " " + "PiB";
+        display = `1 PiB = ${valueOne} / 1 PiB`;
+        break;
       default:
         alert("cant compare same values");
     }
   }
   document.getElementById("result").innerHTML = res;
-if(inputOneRes === "miB"){
-  switch (inputTwoRes) {
-    case "bytes":
-      res = (valueOne * 1048576).toFixed(3) + " " + "bytes";
-      break;
+  document.getElementById("calculationWindow").innerHTML = display;
+
+  if (inputOneRes === "miB") {
+    switch (inputTwoRes) {
+      case "bytes":
+        res = (valueOne * 1048576).toFixed(3) + " " + "bytes";
+        display = `1 byte = ${valueOne} X 1 MiB`;
+        break;
       case "kiB":
         res = (valueOne * 1024).toFixed(3) + " " + "KiB";
+        display = `1 KiB = ${valueOne} X 1 MiB`;
         break;
-        case "giB":
-          res = (valueOne / 1024).toFixed(3) + " " + "GiB";
-          break;
-          case "tiB":
-            res = (valueOne / 1048576).toFixed(3) + " " + "TiB";
-            break;
-            case "piB":
-              res = (valueOne / 1073741824).toFixed(3) + " " + "PiB";
-              break;
-  
-    default:
-      alert("cant compare same value");
+      case "giB":
+        res = (valueOne / 1024).toFixed(3) + " " + "GiB";
+        display = `1 GiB = ${valueOne} / 1 MiB`;
+        break;
+      case "tiB":
+        res = (valueOne / 1048576).toFixed(3) + " " + "TiB";
+        display = `1 TiB = ${valueOne} / 1 MiB`;
+        break;
+      case "piB":
+        res = (valueOne / 1073741824).toFixed(3) + " " + "PiB";
+        display = `1 PiB = ${valueOne} / 1 MiB`;
+        break;
+
+      default:
+        alert("cant compare same value");
+    }
   }
-}
-document.getElementById("result").innerHTML = res;
+  document.getElementById("result").innerHTML = res;
+  document.getElementById("calculationWindow").innerHTML = display;
 
-
-
+  if(inputOneRes === "giB"){
+    switch (inputTwoRes) {
+      case "bytes":
+        
+        break;
+    
+      default:
+        break;
+    }
+  }
 
 }
