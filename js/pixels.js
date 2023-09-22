@@ -260,8 +260,8 @@ buttonFour.addEventListener("click", (event) => {
     document.getElementById("opcionOutputFive").classList.remove("invisible");
     document.getElementById("opcionOutputFive").classList.add("visible");
   }
-  document.getElementById("opcionOutputFive").innerHTML = `tib`;
-  document.getElementById("opcionOutputFive").value = `tib`;
+  document.getElementById("opcionOutputFive").innerHTML = `tiB`;
+  document.getElementById("opcionOutputFive").value = `tiB`;
   if (
     document.getElementById("opcionOutputSix").classList.contains("invisible")
   ) {

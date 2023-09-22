@@ -145,43 +145,81 @@ export function bytes() {
   let inputOneRes = document.getElementById("inputOne").value;
   let inputTwoRes = document.getElementById("inputTwo").value;
   let res;
+  let display;
 
   if (inputOneRes === "bytes") {
     switch (inputTwoRes) {
       case "piB":
-        res = (valueOne / 1125899906842624).toFixed(2) + " " + "PiB";
+        res = (valueOne / 1125899906842624).toFixed(3) + " " + "PiB";
+        display = ` 1 PiB =  ${valueOne} bytes / 1 PiB `
         break;
       case "tiB":
-        res = (valueOne / 1099511627776).toFixed(2) + " " + "TiB";
+        res = (valueOne / 1099511627776).toFixed(3) + " " + "TiB";
         break;
       case "giB":
-        res = (valueOne / 1073741824).toFixed(2) + " " + "GiB";
+        res = (valueOne / 1073741824).toFixed(3) + " " + "GiB";
         break;
       case "miB":
-        res = (valueOne / 1048576).toFixed(2) + " " + "MiB";
+        res = (valueOne / 1048576).toFixed(3) + " " + "MiB";
         break;
       case "kiB":
-        res = (valueOne / 1024).toFixed(2) + " " + "KiB";
+        res = (valueOne / 1024).toFixed(3) + " " + "KiB";
         break;
       default:
         alert("cant compare same values");
     }
-  }document.getElementById("result").innerHTML = res;
+  }
+  document.getElementById("result").innerHTML = res;
+  document.getElementById("calculationWindow").innerHTML = display;
 
-  if(inputOneRes === "kiB"){
-    switch (key) {
-      case value:
-        
+
+  if (inputOneRes === "kiB") {
+    switch (inputTwoRes) {
+      case "bytes":
+        res = (valueOne * 1024).toFixed(3) + " " + "bytes";        
         break;
-    
+      case "miB":
+        res = (valueOne / 1024).toFixed(3) + " " + "MiB";
+        break;
+        case "giB":
+          res = (valueOne / 1048576).toFixed(3) + " " + "GiB";
+          break;
+          case "tiB":
+            res = (valueOne / 1073741824).toFixed(3) + " " + "TiB";
+            break;
+            case "piB":
+              res = (valueOne / 1099511627776).toFixed(3) + " " + "PiB";
+              break;
       default:
-        break;
+        alert("cant compare same values");
     }
   }
-
+  document.getElementById("result").innerHTML = res;
+if(inputOneRes === "miB"){
+  switch (inputTwoRes) {
+    case "bytes":
+      res = (valueOne * 1048576).toFixed(3) + " " + "bytes";
+      break;
+      case "kiB":
+        res = (valueOne * 1024).toFixed(3) + " " + "KiB";
+        break;
+        case "giB":
+          res = (valueOne / 1024).toFixed(3) + " " + "GiB";
+          break;
+          case "tiB":
+            res = (valueOne / 1048576).toFixed(3) + " " + "TiB";
+            break;
+            case "piB":
+              res = (valueOne / 1073741824).toFixed(3) + " " + "PiB";
+              break;
+  
+    default:
+      alert("cant compare same value");
+  }
+}
+document.getElementById("result").innerHTML = res;
 
 
 
 
 }
-
