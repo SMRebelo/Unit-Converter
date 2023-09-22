@@ -21,8 +21,27 @@ buttonOne.addEventListener("click", (event) => {
     document.getElementById("opcionInputThree").classList.remove("invisible");
     document.getElementById("opcionInputThree").classList.add("visible"); //? Uses a class ->"visible/invisivle" to hide and show the option
   }
+  
   document.getElementById("opcionInputThree").innerHTML = `Rem`; //? we must do another innerHTML to rename the elemente!
   document.getElementById("opcionInputThree").value = `Rem`; //? we must also change the value of the element not only its innerHTML
+  if (
+    document.getElementById("opcionInputFour").classList.contains("visible")
+  ) {
+    document.getElementById("opcionInputFour").classList.remove("visible");
+    document.getElementById("opcionInputFour").classList.add("invisible");
+  }
+  if (
+    document.getElementById("opcionInputFive").classList.contains("visible")
+  ) {
+    document.getElementById("opcionInputFive").classList.remove("visible");
+    document.getElementById("opcionInputFive").classList.add("invisible");
+  }
+  if (
+    document.getElementById("opcionInputSix").classList.contains("visible")
+  ) {
+    document.getElementById("opcionInputSix").classList.remove("visible");
+    document.getElementById("opcionInputSix").classList.add("invisible");
+  }//? HERE STARTS BUTTON ONE OPTION TWO !
   document.getElementById("opcionOutputOne").innerHTML = `Px`;
   document.getElementById("opcionOutputOne").value = `Px`;
   document.getElementById("opcionOutputTwo").innerHTML = `Em`;
@@ -35,8 +54,27 @@ buttonOne.addEventListener("click", (event) => {
   }
   document.getElementById("opcionOutputThree").innerHTML = `Rem`; // we must do another innerHTML to rename the elemente!
   document.getElementById("opcionOutputThree").value = `Rem`;
+  if (
+    document.getElementById("opcionOutputFour").classList.contains("visible")
+  ) {
+    document.getElementById("opcionOutputFour").classList.remove("visible");
+    document.getElementById("opcionOutputFour").classList.add("invisible");
+  }
+  if (
+    document.getElementById("opcionOutputFive").classList.contains("visible")
+  ) {
+    document.getElementById("opcionOutputFive").classList.remove("visible");
+    document.getElementById("opcionOutputFive").classList.add("invisible");
+  }
+  if (
+    document.getElementById("opcionOutputSix").classList.contains("visible")
+  ) {
+    document.getElementById("opcionOutputSix").classList.remove("visible");
+    document.getElementById("opcionOutputSix").classList.add("invisible");
+  }
 });
 
+//? HERE STARTS FUNCTION FOR  BUTTON LOGO TWO
 buttonTwo.addEventListener("click", (event) => {
   document.getElementById("titleRight").innerHTML = `Hexadecimal Converter`;
   document.getElementById("opcionInputOne").innerHTML = `Hex`;
@@ -49,6 +87,26 @@ buttonTwo.addEventListener("click", (event) => {
     document.getElementById("opcionInputThree").classList.remove("visible");
     document.getElementById("opcionInputThree").classList.add("invisible");
   } // Uses a class ->"visible/invisivle" to hide and show the option
+  if (
+    document.getElementById("opcionInputFour").classList.contains("visible")
+  ) {
+    document.getElementById("opcionInputFour").classList.remove("visible");
+    document.getElementById("opcionInputFour").classList.add("invisible");
+  }
+  if (
+    document.getElementById("opcionInputFive").classList.contains("visible")
+  ) {
+    document.getElementById("opcionInputFive").classList.remove("visible");
+    document.getElementById("opcionInputFive").classList.add("invisible");
+  }
+  if (
+    document.getElementById("opcionInputSix").classList.contains("visible")
+  ) {
+    document.getElementById("opcionInputSix").classList.remove("visible");
+    document.getElementById("opcionInputSix").classList.add("invisible");
+  }
+
+  //? HERE STARTS THE BUTTON TWO FOR OPCION TWO.
   document.getElementById("opcionOutputOne").innerHTML = `Hex`;
   document.getElementById("opcionOutputOne").value = `Hex`;
   document.getElementById("opcionOutputTwo").innerHTML = `Rgb`;
@@ -59,8 +117,27 @@ buttonTwo.addEventListener("click", (event) => {
     document.getElementById("opcionOutputThree").classList.remove("visible");
     document.getElementById("opcionOutputThree").classList.add("invisible");
   } // Uses a class ->"visible/invisivle" to hide and show the option
+  if (
+    document.getElementById("opcionOutputFour").classList.contains("visible")
+  ) {
+    document.getElementById("opcionOutputFour").classList.remove("visible");
+    document.getElementById("opcionOutputFour").classList.add("invisible");
+  }
+  if (
+    document.getElementById("opcionOutputFive").classList.contains("visible")
+  ) {
+    document.getElementById("opcionOutputFive").classList.remove("visible");
+    document.getElementById("opcionOutputFive").classList.add("invisible");
+  }
+  if (
+    document.getElementById("opcionOutputSix").classList.contains("visible")
+  ) {
+    document.getElementById("opcionOutputSix").classList.remove("visible");
+    document.getElementById("opcionOutputSix").classList.add("invisible");
+  }
 });
 
+//? HERE STARTS THE BUTTON FOR LOGO THREE!
 buttonThree.addEventListener("click", (event) =>{
   document.getElementById("titleRight").innerHTML = `Binary Converter`;
   document.getElementById("opcionInputOne").innerHTML = `Bit`;
@@ -73,6 +150,26 @@ buttonThree.addEventListener("click", (event) =>{
     document.getElementById("opcionInputThree").classList.remove("visible");
     document.getElementById("opcionInputThree").classList.add("invisible");
   } // Uses a class ->"visible/invisivle" to hide and show the option
+  if (
+    document.getElementById("opcionInputFour").classList.contains("visible")
+  ) {
+    document.getElementById("opcionInputFour").classList.remove("visible");
+    document.getElementById("opcionInputFour").classList.add("invisible");
+  }
+  if (
+    document.getElementById("opcionInputFive").classList.contains("visible")
+  ) {
+    document.getElementById("opcionInputFive").classList.remove("visible");
+    document.getElementById("opcionInputFive").classList.add("invisible");
+  }
+  if (
+    document.getElementById("opcionInputSix").classList.contains("visible")
+  ) {
+    document.getElementById("opcionInputSix").classList.remove("visible");
+    document.getElementById("opcionInputSix").classList.add("invisible");
+  }
+
+  //? HERE STARTS THE BUTTON FOR THREE FOR OPCION TWO.
   document.getElementById("opcionOutputOne").innerHTML = `Bit`;
   document.getElementById("opcionOutputOne").value = `Bit`;
   document.getElementById("opcionOutputTwo").innerHTML = `Dec`;
@@ -83,6 +180,24 @@ buttonThree.addEventListener("click", (event) =>{
     document.getElementById("opcionOutputThree").classList.remove("visible");
     document.getElementById("opcionOutputThree").classList.add("invisible");
   } // Uses a class ->"visible/invisivle" to hide and show the option
+  if (
+    document.getElementById("opcionOutputFour").classList.contains("visible")
+  ) {
+    document.getElementById("opcionOutputFour").classList.remove("visible");
+    document.getElementById("opcionOutputFour").classList.add("invisible");
+  }
+  if (
+    document.getElementById("opcionOutputFive").classList.contains("visible")
+  ) {
+    document.getElementById("opcionOutputFive").classList.remove("visible");
+    document.getElementById("opcionOutputFive").classList.add("invisible");
+  }
+  if (
+    document.getElementById("opcionOutputSix").classList.contains("visible")
+  ) {
+    document.getElementById("opcionOutputSix").classList.remove("visible");
+    document.getElementById("opcionOutputSix").classList.add("invisible");
+  }
 })
 
 buttonFour.addEventListener("click", (event) =>{
@@ -93,7 +208,7 @@ buttonFour.addEventListener("click", (event) =>{
 
 
 
-  
+
 })
 
 buttonSubmit.addEventListener("click", (event) => {
