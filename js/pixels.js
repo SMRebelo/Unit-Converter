@@ -1,4 +1,4 @@
-import { binary, bytes, hexadecimal, pixels } from "./conversions";
+import { binary, bytes, clear, hexadecimal, pixels } from "./conversions";
 
 const buttonOne = document.getElementById("logoOne");
 const buttonTwo = document.getElementById("logoTwo");
@@ -9,6 +9,7 @@ const buttonSubmit = document.getElementById("buttonSubmit");
 const title = document.getElementById("titleRight");
 
 buttonOne.addEventListener("click", (event) => {
+  clear();
   document.getElementById("titleRight").innerHTML = `Pixel Converter`;
   document.getElementById("opcionInputOne").innerHTML = `Px`;
   document.getElementById("opcionInputOne").value = `Px`; //? we must also change the value of the element not only its innerHTML
@@ -73,6 +74,7 @@ buttonOne.addEventListener("click", (event) => {
 
 //? HERE STARTS FUNCTION FOR  BUTTON LOGO TWO
 buttonTwo.addEventListener("click", (event) => {
+  clear();
   document.getElementById("titleRight").innerHTML = `Hexadecimal Converter`;
   document.getElementById("opcionInputOne").innerHTML = `Hex`;
   document.getElementById("opcionInputOne").value = `Hex`;
@@ -134,6 +136,7 @@ buttonTwo.addEventListener("click", (event) => {
 
 //? HERE STARTS THE BUTTON FOR LOGO THREE!
 buttonThree.addEventListener("click", (event) => {
+  clear();
   document.getElementById("titleRight").innerHTML = `Binary Converter`;
   document.getElementById("opcionInputOne").innerHTML = `Bit`;
   document.getElementById("opcionInputOne").value = `Bit`;
@@ -194,8 +197,8 @@ buttonThree.addEventListener("click", (event) => {
 });
 // ? HERE STARTS THE BUTTON FOR LOGO FOUR.
 buttonFour.addEventListener("click", (event) => {
+  clear();
   document.getElementById("titleRight").innerHTML = "Bytes Converter";
-
   document.getElementById("opcionInputOne").innerHTML = `bytes`;
   document.getElementById("opcionInputOne").value = `bytes`;
   document.getElementById("opcionInputTwo").innerHTML = `kiB`;

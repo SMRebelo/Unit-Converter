@@ -1,6 +1,12 @@
 import hexRgb from "hex-rgb";
 import rgbHex from "rgb-hex";
 
+export function clear(event) {
+  document.getElementById("inputSelection").value = "";
+  document.getElementById("result").innerHTML = "";
+  document.getElementById("calculationWindow").innerHTML = "";
+}
+
 export function pixels() {
   let valueOne = +document.getElementById("inputSelection").value;
   let inputOneRes = document.getElementById("inputOne").value;
